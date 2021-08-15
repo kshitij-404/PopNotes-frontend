@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("assests/homepage-background.svg");
+  background-repeat: no-repeat;
+  background-color: #137fcd;
+  background-size: 100%;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 1s ease;
+  transition: background-image 1s ease;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.container {
+  height: 80vh;
+  width: 80vw;
+  position: relative;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0px 25px 75px 5px rgba(0, 0, 0, 0.35);
+  border-radius: 20px;
+  transform: translate(10%, 10%);
+  padding: 20px;
+}
+
+nav {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.home {
+  color: white;
+  padding: 10px;
+  background: #137fcd;
+  border-radius: 50px;
+  margin: 5px;
+}
+
+.dark-light {
+  color: white;
+  padding: 10px;
+  background: #137fcd;
+  border-radius: 50px;
+  margin: 5px;
+}
+
+main {
+  height: 50vh;
+  width: 100%;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main > div {
+  width: 50%;
+}
+
+.heading {
+  font-size: 55px;
+  letter-spacing: 1px;
+  color: #137fcd;
+}
+
+.sub-heading {
+  font-size: 25px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  color: rgb(53, 53, 53);
+}
+
+.right-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.homepage-illustration {
+  width: 100%;
+}
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.dark-mode {
+  background-image: url("assests/homepage-background-dark.svg");
+}
+
+.left-form {
+  width: fit-content;
+  position: relative;
+  background: rgba(18, 38, 156, 0.9);
+  border-radius: 20px;
+  transform: translate(10%, 10%);
+  padding: 20px;
+  margin-left: 50px;
+  box-shadow: 0px 25px 75px 5px rgba(0, 0, 0, 0.35);
+}
+
+.right-form {
+  width: fit-content;
+  position: relative;
+  background: rgba(18, 38, 156, 0.9);
+  border-radius: 20px;
+  transform: translate(10%, 10%);
+  padding: 20px;
+  margin-right: 130px;
+  box-shadow: 0px 25px 75px 5px rgba(0, 0, 0, 0.35);
+}
+
+.sign-in-head,
+.sign-up-head {
+  color: white;
+  margin: 10px;
+}
+
+.sign-in-button,
+.sign-up-button {
+  color: white;
+  padding: 10px;
+  background: #137fcd;
+  border-radius: 50px;
+  margin: 5px;
+}
+
+.email,
+.password,
+.register-mail,
+.enter-name,
+.register-password,
+.confirm-password {
+  color: grey;
+  padding: 10px;
+  background: white;
+  border-radius: 50px;
+  margin: 5px;
+}
+
+a:link,
+a:visited {
+  color: white;
+}
